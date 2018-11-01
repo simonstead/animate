@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: example infinite 8s ease-in-out, App-logo-spin infinite 20s linear;
+  /* animation-direction: reverse; */
   height: 40vmin;
 }
 
@@ -29,4 +30,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes example {
+    0% {background-color: #af4dff;}
+    50% {background-color: #68dd3d;}
+    100% {background-color: #af4dff;}
 }
